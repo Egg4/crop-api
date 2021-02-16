@@ -1,0 +1,29 @@
+{
+  "name": "egg4/crop-api",
+  "description": "Crop manager",
+  "keywords": [
+    "egg-framework",
+    "crop-api"
+  ],
+  "homepage": "https://github.com/egg4/crop-api",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ClementS",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "~7.4",
+    "egg4/egg-framework": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.7"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:egg4/egg-framework.git"
+    }
+  ]
+}

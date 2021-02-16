@@ -1,0 +1,20 @@
+# Disallow dir listing
+Options -Indexes
+
+# Set application environment
+SetEnv APP_ENV "dev"
+
+# Enable gzip compression
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE application/json application/xml text/xml
+
+# Disable http cache
+Header add Cache-Control "max-age=0"
+
+# Redirect all requests to index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^.*$ - [NC,L]
+RewriteRule ^.*$ index.php [NC,L]

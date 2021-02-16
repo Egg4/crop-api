@@ -1,0 +1,9 @@
+cache/
+log/
+vendor/
+src/Config/prod.ini
+src/Config/test.ini
+src/Config/dev.ini
+.buildpath
+.project
+.settings/
